@@ -9,9 +9,9 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>rpc-common</module>
-        <module>rpc-core</module>
-        <module>rpc-example</module>
+        <module>yz-rpc-common</module>
+        <module>yz-rpc-core</module>
+        <module>yz-rpc-example</module>
     </modules>
 
     <properties>
