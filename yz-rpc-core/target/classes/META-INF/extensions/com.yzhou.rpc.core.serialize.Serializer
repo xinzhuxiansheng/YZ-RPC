@@ -1,2 +1,0 @@
-kyro=com.yzhou.rpc.core.serialize.kyro.KryoSerializer
-protostuff=com.yzhou.rpc.core.serialize.protostuff.ProtostuffSerializer
