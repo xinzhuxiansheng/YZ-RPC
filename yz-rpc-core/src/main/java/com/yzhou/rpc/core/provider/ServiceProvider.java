@@ -1,6 +1,5 @@
 package com.yzhou.rpc.core.provider;
 
-import com.yzhou.rpc.core.config.NettyRpcServerConfig;
 import com.yzhou.rpc.core.config.RpcServiceConfig;
 
 public interface ServiceProvider {
@@ -24,5 +23,5 @@ public interface ServiceProvider {
      *
      * @param rpcServiceConfig
      */
-    void publishService(NettyRpcServerConfig nettyRpcServerConfig, RpcServiceConfig rpcServiceConfig);
+    void publishService(RpcServiceConfig rpcServiceConfig);
 }

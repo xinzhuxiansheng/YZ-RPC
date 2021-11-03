@@ -4,7 +4,6 @@ import com.yzhou.rpc.common.factory.SingletonFactory;
 import com.yzhou.rpc.common.utils.RuntimeUtil;
 import com.yzhou.rpc.common.utils.concurrent.threadpool.ThreadPoolFactoryUtils;
 import com.yzhou.rpc.core.config.CustomShutdownHook;
-import com.yzhou.rpc.core.config.NettyRpcServerConfig;
 import com.yzhou.rpc.core.config.RpcServiceConfig;
 import com.yzhou.rpc.core.provider.ServiceProvider;
 import com.yzhou.rpc.core.provider.impl.ZkServiceProviderImpl;
@@ -32,19 +31,13 @@ import java.util.concurrent.TimeUnit;
 public class NettyRpcServer {
     private final static Logger logger = LoggerFactory.getLogger(NettyRpcServer.class);
 
-    private NettyRpcServerConfig  nettyRpcServerConfig;
     public static int PORT = 9998;
 
     private final ServiceProvider serviceProvider = SingletonFactory.getInstance(ZkServiceProviderImpl.class);
 
     public void registerService(RpcServiceConfig rpcServiceConfig) {
-        serviceProvider.publishService(nettyRpcServerConfig,rpcServiceConfig);
+        serviceProvider.publishService(rpcServiceConfig);
     }
-
-    public NettyRpcServer(NettyRpcServerConfig nettyRpcServerConfig){
-        this.nettyRpcServerConfig = nettyRpcServerConfig;
-    }
-
 
     public void start() {
         CustomShutdownHook.getCustomShutdownHook().clearAll();

@@ -1,6 +1,7 @@
 /Users/yiche/Code/JAVA/yzhou/rpc/YZ-RPC/yz-rpc-core/src/main/java/com/yzhou/rpc/core/proxy/RpcClientProxy.java
 /Users/yiche/Code/JAVA/yzhou/rpc/YZ-RPC/yz-rpc-core/src/main/java/com/yzhou/rpc/core/provider/ServiceProvider.java
 /Users/yiche/Code/JAVA/yzhou/rpc/YZ-RPC/yz-rpc-core/src/main/java/com/yzhou/rpc/core/registry/zk/ZkServiceDiscoveryImpl.java
+/Users/yiche/Code/JAVA/yzhou/rpc/YZ-RPC/yz-rpc-core/src/main/java/com/yzhou/rpc/core/config/NettyRpcServerConfig.java
 /Users/yiche/Code/JAVA/yzhou/rpc/YZ-RPC/yz-rpc-core/src/main/java/com/yzhou/rpc/core/remoting/transport/netty/client/UnprocessedRequests.java
 /Users/yiche/Code/JAVA/yzhou/rpc/YZ-RPC/yz-rpc-core/src/main/java/com/yzhou/rpc/core/annotation/RpcService.java
 /Users/yiche/Code/JAVA/yzhou/rpc/YZ-RPC/yz-rpc-core/src/main/java/com/yzhou/rpc/core/remoting/transport/netty/server/NettyRpcServerHandler.java
@@ -35,5 +36,6 @@
 /Users/yiche/Code/JAVA/yzhou/rpc/YZ-RPC/yz-rpc-core/src/main/java/com/yzhou/rpc/core/registry/ServiceRegistry.java
 /Users/yiche/Code/JAVA/yzhou/rpc/YZ-RPC/yz-rpc-core/src/main/java/com/yzhou/rpc/core/remoting/dto/RpcResponse.java
 /Users/yiche/Code/JAVA/yzhou/rpc/YZ-RPC/yz-rpc-core/src/main/java/com/yzhou/rpc/core/registry/ServiceDiscovery.java
+/Users/yiche/Code/JAVA/yzhou/rpc/YZ-RPC/yz-rpc-core/src/main/java/com/yzhou/rpc/core/config/NettyRpcClientConfig.java
 /Users/yiche/Code/JAVA/yzhou/rpc/YZ-RPC/yz-rpc-core/src/main/java/com/yzhou/rpc/core/remoting/constants/RpcConstants.java
 /Users/yiche/Code/JAVA/yzhou/rpc/YZ-RPC/yz-rpc-core/src/main/java/com/yzhou/rpc/core/config/RpcServiceConfig.java

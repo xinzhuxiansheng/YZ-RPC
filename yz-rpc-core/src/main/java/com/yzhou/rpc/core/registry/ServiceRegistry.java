@@ -1,7 +1,6 @@
 package com.yzhou.rpc.core.registry;
 
 import com.yzhou.rpc.common.extension.SPI;
-import com.yzhou.rpc.core.config.NettyRpcServerConfig;
 
 import java.net.InetSocketAddress;
 
@@ -13,5 +12,5 @@ public interface ServiceRegistry {
      * @param rpcServerName
      * @param inetSocketAddress
      */
-    void registerService(NettyRpcServerConfig nettyRpcServerConfig,String rpcServerName, InetSocketAddress inetSocketAddress);
+    void registerService(String rpcServerName, InetSocketAddress inetSocketAddress);
 }

@@ -5,7 +5,6 @@ import com.yzhou.rpc.common.enums.CompressTypeEnum;
 import com.yzhou.rpc.common.enums.SerializationTypeEnum;
 import com.yzhou.rpc.common.extension.ExtensionLoader;
 import com.yzhou.rpc.common.factory.SingletonFactory;
-import com.yzhou.rpc.core.config.NettyRpcClientConfig;
 import com.yzhou.rpc.core.registry.ServiceDiscovery;
 import com.yzhou.rpc.core.remoting.constants.RpcConstants;
 import com.yzhou.rpc.core.remoting.dto.RpcMessage;
@@ -38,18 +37,13 @@ import java.util.concurrent.TimeUnit;
  */
 public final class NettyRpcClient implements RpcRequestTransport {
     private static final Logger logger = LoggerFactory.getLogger(NettyRpcClient.class);
-    private NettyRpcClientConfig nettyRpcClientConfig;
-    private ServiceDiscovery serviceDiscovery;
-    private UnprocessedRequests unprocessedRequests;
-    private ChannelProvider channelProvider;
-    private Bootstrap bootstrap;
-    private EventLoopGroup eventLoopGroup;
+    private final ServiceDiscovery serviceDiscovery;
+    private final UnprocessedRequests unprocessedRequests;
+    private final ChannelProvider channelProvider;
+    private final Bootstrap bootstrap;
+    private final EventLoopGroup eventLoopGroup;
 
-    private NettyRpcClient() {
-    }
-
-    public NettyRpcClient(NettyRpcClientConfig nettyRpcClientConfig) {
-        this.nettyRpcClientConfig = nettyRpcClientConfig;
+    public NettyRpcClient() {
         // initialize resources such as EventLoopGroup, Bootstrap
         eventLoopGroup = new NioEventLoopGroup();
         bootstrap = new Bootstrap();
