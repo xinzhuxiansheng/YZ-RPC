@@ -1,4 +1,0 @@
-2021-10-12 00:17:11 [ CuratorUtils.java:54 ] - [ ERROR ] create persistent node for path [/my-rpc/com.yzhou.rpc.example.api.HelloServicetest1version1/10.1.1.155:9998] fail
-2021-10-12 00:17:11 [ CuratorUtils.java:54 ] - [ ERROR ] create persistent node for path [/my-rpc/com.yzhou.rpc.example.api.HelloServicetest2version2/10.1.1.155:9998] fail
-2021-10-12 00:20:57 [ CuratorUtils.java:54 ] - [ ERROR ] create persistent node for path [/my-rpc/com.yzhou.rpc.example.api.HelloServicetest1version1/10.1.1.155:9998] fail, message:org.apache.zookeeper.KeeperException$NoNodeException: KeeperErrorCode = NoNode for /my-rpc
-2021-10-12 00:20:57 [ CuratorUtils.java:54 ] - [ ERROR ] create persistent node for path [/my-rpc/com.yzhou.rpc.example.api.HelloServicetest2version2/10.1.1.155:9998] fail, message:org.apache.zookeeper.KeeperException$NoNodeException: KeeperErrorCode = NoNode for /my-rpc
